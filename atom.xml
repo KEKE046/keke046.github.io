@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>KEKE&#39;s Little Blog</title>
+  
+  <subtitle>a place with colors and peace</subtitle>
+  <link href="http://keke046.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://keke046.github.io/"/>
+  <updated>2022-03-27T16:42:35.120Z</updated>
+  <id>http://keke046.github.io/</id>
+  
+  <author>
+    <name>KEKE</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编译Lab心得</title>
+    <link href="http://keke046.github.io/2022/03/27/compiler/"/>
+    <id>http://keke046.github.io/2022/03/27/compiler/</id>
+    <published>2022-03-27T13:53:48.000Z</published>
+    <updated>2022-03-27T16:42:35.120Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;h1 id=&quot;编译Lab心得&quot;&gt;&lt;a href=&quot;#编译Lab心得&quot; class=&quot;headerlink&quot; title=&quot;编译Lab心得&quot;&gt;&lt;/a&gt;编译Lab心得&lt;/h1&gt;&lt;p&gt;编译lab，从零开始写一个编译器，要求能够解析C语法的一个子集。&lt;br&gt;写了一周lab，重写了3遍。有的是代码不work，有的是感觉代码不够优美。&lt;/p&gt;
+&lt;p&gt;助教给的libkoopa是C的库，我想要的是modern c++，所以放弃自己写来IR的内存表示。也是为了积累工程上的经验。&lt;/p&gt;
+&lt;p&gt;最后第四版终于一气呵成。我的C++代码有2.5k行，对比助教给的kira的rust代码有2.1k行（不算libkoopa）。感觉非常地精简优美，在此将心得分享给大家。&lt;/p&gt;
+&lt;h1 id=&quot;重写的经历&quot;&gt;&lt;a href=&quot;#重写的经历&quot; class=&quot;headerlink&quot; title=&quot;重写的经历&quot;&gt;&lt;/a&gt;重写的经历&lt;/h1&gt;&lt;p&gt;助教给了一个样例编译器，叫&lt;strong&gt;kira&lt;/strong&gt;，（日语：キラキラ，意思是闪闪发光的）。助教想要让他的编译器像星星一样，闪闪发光，指明同学们写编译器的道路。&lt;/p&gt;
+&lt;p&gt;为了证明自己的二次元浓度，我给编译器起名叫：&lt;strong&gt;hoka&lt;/strong&gt;（日语：ほかほか，意思是暖洋洋的），希望写编译器的过程能带给我一点温暖。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://keke046.github.io/2022/03/17/hello-world/"/>
+    <id>http://keke046.github.io/2022/03/17/hello-world/</id>
+    <published>2022-03-17T15:03:08.684Z</published>
+    <updated>2021-11-16T15:37:07.093Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>deep dream 尝试</title>
+    <link href="http://keke046.github.io/2021/12/26/deep-dream/"/>
+    <id>http://keke046.github.io/2021/12/26/deep-dream/</id>
+    <published>2021-12-26T06:24:59.000Z</published>
+    <updated>2021-12-26T07:36:32.821Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;h1 id=&quot;效果&quot;&gt;&lt;a href=&quot;#效果&quot; class=&quot;headerlink&quot; title=&quot;效果&quot;&gt;&lt;/a&gt;效果&lt;/h1&gt;&lt;p&gt;用VGG16预训练模型，$L=17$（RELU也算一层），$lr=0.08$，$\lambda=0.08$，金字塔每层优化器迭代5次，感觉很克苏鲁。&lt;/p&gt;
+&lt;img data-src=&quot;/2021/12/26/deep-dream/img.jpg&quot; class=&quot;&quot;&gt; &lt;img data-src=&quot;/2021/12/26/deep-dream/dream.jpg&quot; class=&quot;&quot;&gt;</summary>
+    
+    
+    
+    <category term="Deep Learning" scheme="http://keke046.github.io/categories/Deep-Learning/"/>
+    
+    
+    <category term="Deep Learning" scheme="http://keke046.github.io/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PCI Passthrough 配置 （显卡直通）</title>
+    <link href="http://keke046.github.io/2021/12/17/pci-passthrough/"/>
+    <id>http://keke046.github.io/2021/12/17/pci-passthrough/</id>
+    <published>2021-12-17T08:10:20.000Z</published>
+    <updated>2021-12-17T09:07:46.506Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;p&gt;在 archlinux 上配置 PCI passthrough。其它版本的linux应该方法类似。&lt;/p&gt;
+&lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;这里搬运了 &lt;a href=&quot;https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF&quot;&gt;archwiki&lt;/a&gt; 上的步骤。&lt;/strong&gt; 更详细的请看 archwiki。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;启动IOMMU：编辑 &lt;code&gt;vim /etc/default/grub&lt;/code&gt; ，给 &lt;code&gt;GRUB_CMDLINE_LINUX_DEFAULT&lt;/code&gt; 后面加上 &lt;code&gt;intel_iommu=on iommu=pt&lt;/code&gt;&lt;/p&gt;
+ &lt;img data-src=&quot;/2021/12/17/pci-passthrough/2021-12-17-16-18-30.png&quot; class=&quot;&quot; width=&quot;600&quot;&gt;
+&lt;!-- ![](/2021/12/17/pci-passthrough/../pci-passthrough/2021-12-17-16-18-30.png) --&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="archlinux" scheme="http://keke046.github.io/categories/archlinux/"/>
+    
+    
+    <category term="qemu" scheme="http://keke046.github.io/tags/qemu/"/>
+    
+    <category term="archlinux" scheme="http://keke046.github.io/tags/archlinux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微观经济学整理复习</title>
+    <link href="http://keke046.github.io/2021/12/12/microeconomics/"/>
+    <id>http://keke046.github.io/2021/12/12/microeconomics/</id>
+    <published>2021-12-12T08:50:02.000Z</published>
+    <updated>2021-12-26T06:24:43.551Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;h2 id=&quot;预算&quot;&gt;&lt;a href=&quot;#预算&quot; class=&quot;headerlink&quot; title=&quot;预算&quot;&gt;&lt;/a&gt;预算&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;消费束：&lt;/strong&gt; 向量 $X=(x_1,x_2)$ 表示不同商品的消费数量&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预算集：&lt;/strong&gt; 收入为 $m$ 价格为 $(p_1,p_2)$ 时能够负担的消费束： ${(x_1,x_2)|p_1x_1+p_2x_2\le m}$ &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预算线：&lt;/strong&gt; 所需费用恰好等于 $m$ 的消费束： $p_1x_1+p_2x_2=m$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;斜率：预算线的可以看做一种机会成本，为了多消费商品1，需要放弃一部分商品2&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="课程笔记" scheme="http://keke046.github.io/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="微观经济学" scheme="http://keke046.github.io/tags/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+    <category term="课程笔记" scheme="http://keke046.github.io/tags/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RSA爆破——大数因数分解库</title>
+    <link href="http://keke046.github.io/2021/12/01/rsa-crack/"/>
+    <id>http://keke046.github.io/2021/12/01/rsa-crack/</id>
+    <published>2021-12-01T10:47:49.000Z</published>
+    <updated>2021-12-02T17:28:50.569Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;h1 id=&quot;工作量单位&quot;&gt;&lt;a href=&quot;#工作量单位&quot; class=&quot;headerlink&quot; title=&quot;工作量单位&quot;&gt;&lt;/a&gt;工作量单位&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;FLOPS：每秒浮点运算量（FLoating point Operations Per Second）&lt;/li&gt;
+&lt;li&gt;G-Hour：指1GFLOPS的机器工作1小时的计算量。&lt;/li&gt;
+&lt;li&gt;CPU-Hour, Core-Year: CPU单线程工作1小时的计算量，CPU泛指有1GFLOPS的参考CPU&lt;/li&gt;
+&lt;li&gt;CPU-Year, Core-Year：CPU单线程工作1年的计算量，CPU泛指有1GFLOPS的参考CPU&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="tools" scheme="http://keke046.github.io/categories/tools/"/>
+    
+    
+    <category term="crack" scheme="http://keke046.github.io/tags/crack/"/>
+    
+    <category term="tools" scheme="http://keke046.github.io/tags/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计网lab摆烂记</title>
+    <link href="http://keke046.github.io/2021/12/01/mofish/compute-network/"/>
+    <id>http://keke046.github.io/2021/12/01/mofish/compute-network/</id>
+    <published>2021-12-01T10:47:49.000Z</published>
+    <updated>2021-12-02T05:22:23.546Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;p&gt;计算机网络lab，手写链路IP和TCP，重写了至少3遍TCP之后，废弃了约1500行代码后，成功躺平，开始乱搞。&lt;/p&gt;
+&lt;p&gt;感觉TCP就像克苏鲁一样。所有尝试简化TCP让它变得条理清晰，或者用C++的特殊语法来优化代码的尝试都失败了。&lt;/p&gt;
+&lt;p&gt;乱搞真香。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本文和文中图片纯属虚构，纯属调侃，大家笑得开心就行了，不要当真&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="http://keke046.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://keke046.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala笔记01 -- 继承、协变与逆变</title>
+    <link href="http://keke046.github.io/2021/11/12/scala-learn/01-covariance-contravariance/"/>
+    <id>http://keke046.github.io/2021/11/12/scala-learn/01-covariance-contravariance/</id>
+    <published>2021-11-12T09:17:21.000Z</published>
+    <updated>2021-12-01T13:38:17.980Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+
+&lt;p&gt;&lt;strong&gt;协变和逆变的关键在与“变”字。&lt;/strong&gt; 模板类是类的函数。协变和逆变，实际上像是函数的单调关系。（下面的 $A&amp;lt;:B$ 指的 $A$ 继承 $B$ ）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$A&amp;lt;:B \Rightarrow F[A] &amp;lt;: F[B]$ 的，就是协变。也即是，模板类与参数的继承方向相同。&lt;br&gt;$A&amp;lt;:B \Rightarrow F[A] &amp;gt;: F[B]$ 的，就是逆变。也即是，模板类与参数的继承方向相反。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;继承：一种包含关系&quot;&gt;&lt;a href=&quot;#继承：一种包含关系&quot; class=&quot;headerlink&quot; title=&quot;继承：一种包含关系&quot;&gt;&lt;/a&gt;继承：一种包含关系&lt;/h1&gt;&lt;p&gt;类的关键特征，是它的继承关系。但在scala或java中，类除了可以继承，还可以有接口（或特质）。这时候，“继承”的概念是模糊的。&lt;/p&gt;
+&lt;p&gt;为什么说“继承”是模糊的呢？给一个例子。下面的代码声明了一个&lt;a href=&quot;http://47.96.191.1/hineven/&quot;&gt;&lt;code&gt;Hineven&lt;/code&gt;&lt;/a&gt;，他既是艺术家也是程序员：&lt;/p&gt;
+&lt;figure class=&quot;highlight scala&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;trait&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Artist&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;trait&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Programmer&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Hineven&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Artist&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Programmer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="scala" scheme="http://keke046.github.io/categories/scala/"/>
+    
+    
+    <category term="scala" scheme="http://keke046.github.io/tags/scala/"/>
+    
+    <category term="compiler" scheme="http://keke046.github.io/tags/compiler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>trick of GNU make: 编译最后一次被修改的文件</title>
+    <link href="http://keke046.github.io/2021/11/11/makefile-trick/"/>
+    <id>http://keke046.github.io/2021/11/11/makefile-trick/</id>
+    <published>2021-11-10T16:41:07.000Z</published>
+    <updated>2022-03-17T15:03:56.208Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;h1 id=&quot;用make一键编译运行&quot;&gt;&lt;a href=&quot;#用make一键编译运行&quot; class=&quot;headerlink&quot; title=&quot;用make一键编译运行&quot;&gt;&lt;/a&gt;用make一键编译运行&lt;/h1&gt;&lt;p&gt;在打比赛的时候，会有在几道题之间切来切去的情况。频繁地输入 &lt;code&gt;g++ A.cpp -o A.out&lt;/code&gt; 编译然后 &lt;code&gt;./A.out&lt;/code&gt; 执行会非常的麻烦。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;make&lt;/code&gt; 比 &lt;code&gt;g++&lt;/code&gt; 敲起来要顺手得多。而且，可以依赖 &lt;code&gt;make&lt;/code&gt; 的版本检查功能，&lt;strong&gt;一键运行刚改过的那个代码&lt;/strong&gt;。也就是说，不管在做 A,B,C,D,E 中的哪一个题，都只需要输入一个 &lt;code&gt;make&lt;/code&gt; 就能够编译运行。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="coding" scheme="http://keke046.github.io/categories/coding/"/>
+    
+    
+    <category term="Makefile" scheme="http://keke046.github.io/tags/Makefile/"/>
+    
+    <category term="tricks" scheme="http://keke046.github.io/tags/tricks/"/>
+    
+  </entry>
+  
+</feed>

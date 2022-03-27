@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>deep dream 尝试</title>
+    <url>/2021/12/26/deep-dream/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Deep Learning</category>
+      </categories>
+      <tags>
+        <tag>Deep Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>trick of GNU make: 编译最后一次被修改的文件</title>
+    <url>/2021/11/11/makefile-trick/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>coding</category>
+      </categories>
+      <tags>
+        <tag>Makefile</tag>
+        <tag>tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/03/17/hello-world/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>微观经济学整理复习</title>
+    <url>/2021/12/12/microeconomics/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>课程笔记</category>
+      </categories>
+      <tags>
+        <tag>微观经济学</tag>
+        <tag>课程笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PCI Passthrough 配置 （显卡直通）</title>
+    <url>/2021/12/17/pci-passthrough/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>archlinux</category>
+      </categories>
+      <tags>
+        <tag>qemu</tag>
+        <tag>archlinux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RSA爆破——大数因数分解库</title>
+    <url>/2021/12/01/rsa-crack/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>crack</tag>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计网lab摆烂记</title>
+    <url>/2021/12/01/mofish/compute-network/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Scala笔记01 -- 继承、协变与逆变</title>
+    <url>/2021/11/12/scala-learn/01-covariance-contravariance/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>scala</category>
+      </categories>
+      <tags>
+        <tag>scala</tag>
+        <tag>compiler</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编译Lab心得</title>
+    <url>/2022/03/27/compiler/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+</search>
