@@ -6,7 +6,7 @@
   <link href="http://keke046.github.io/atom.xml" rel="self"/>
   
   <link href="http://keke046.github.io/"/>
-  <updated>2022-03-27T16:44:21.342Z</updated>
+  <updated>2022-03-27T16:54:41.737Z</updated>
   <id>http://keke046.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://keke046.github.io/2022/03/27/compiler/"/>
     <id>http://keke046.github.io/2022/03/27/compiler/</id>
     <published>2022-03-27T13:53:48.000Z</published>
-    <updated>2022-03-27T16:44:21.342Z</updated>
+    <updated>2022-03-27T16:54:41.737Z</updated>
     
     
     <summary type="html">&lt;!-- indicate-the-source --&gt;
 
 &lt;h1 id=&quot;编译Lab心得&quot;&gt;&lt;a href=&quot;#编译Lab心得&quot; class=&quot;headerlink&quot; title=&quot;编译Lab心得&quot;&gt;&lt;/a&gt;编译Lab心得&lt;/h1&gt;&lt;p&gt;编译lab，从零开始写一个编译器，要求能够解析C语法的一个子集。&lt;br&gt;写了一周lab，重写了3遍。有的是代码不work，有的是感觉代码不够优美。&lt;/p&gt;
-&lt;p&gt;助教给的libkoopa是C的库，我想要的是modern c++，所以放弃自己写来IR的内存表示。也是为了积累工程上的经验。&lt;/p&gt;
+&lt;p&gt;助教给的libkoopa是C的库，我想要的是现代c++，所以放弃libkoopa，自己写IR的内存表示。也是为了积累工程上的经验。&lt;/p&gt;
 &lt;p&gt;最后第四版终于一气呵成。我的C++代码有2.5k行，对比助教给的kira的rust代码有2.1k行（不算libkoopa）。感觉非常地精简优美，在此将心得分享给大家。&lt;/p&gt;
 &lt;h1 id=&quot;重写的经历&quot;&gt;&lt;a href=&quot;#重写的经历&quot; class=&quot;headerlink&quot; title=&quot;重写的经历&quot;&gt;&lt;/a&gt;重写的经历&lt;/h1&gt;&lt;p&gt;助教给了一个样例编译器，叫&lt;strong&gt;kira&lt;/strong&gt;，（日语：キラキラ，意思是闪闪发光的）。助教想要让他的编译器像星星一样，闪闪发光，指明同学们写编译器的道路。&lt;/p&gt;
 &lt;p&gt;为了证明自己的二次元浓度，我给编译器起名叫：&lt;strong&gt;hoka&lt;/strong&gt;（日语：ほかほか，意思是暖洋洋的），希望写编译器的过程能带给我一点温暖。&lt;/p&gt;</summary>
