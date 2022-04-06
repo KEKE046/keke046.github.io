@@ -6,7 +6,7 @@
   <link href="http://keke046.github.io/atom.xml" rel="self"/>
   
   <link href="http://keke046.github.io/"/>
-  <updated>2022-03-27T16:54:41.737Z</updated>
+  <updated>2022-04-06T08:56:31.206Z</updated>
   <id>http://keke046.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>matplotlib 中文显示</title>
+    <link href="http://keke046.github.io/2022/04/06/matplotlib-chinese/"/>
+    <id>http://keke046.github.io/2022/04/06/matplotlib-chinese/</id>
+    <published>2022-04-06T08:37:23.000Z</published>
+    <updated>2022-04-06T08:56:31.206Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;h1 id=&quot;matplotlib-中文显示&quot;&gt;&lt;a href=&quot;#matplotlib-中文显示&quot; class=&quot;headerlink&quot; title=&quot;matplotlib 中文显示&quot;&gt;&lt;/a&gt;matplotlib 中文显示&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MPL_RC=&lt;span class=&quot;string&quot;&gt;&amp;quot;`python -c &amp;#x27;import matplotlib; print(matplotlib.matplotlib_fname())&amp;#x27;`&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MPL_FONTS=`dirname &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;`/fonts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MPL_CACHE=&lt;span class=&quot;string&quot;&gt;&amp;quot;`python -c &amp;#x27;import matplotlib; print(matplotlib.get_cachedir())&amp;#x27;`&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TTF_URL=&lt;span class=&quot;string&quot;&gt;&amp;quot;https://raw.githubusercontent.com/StellarCN/scp_zh/master/fonts/SimHei.ttf&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;TTF_URL&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt; -o &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_FONTS&amp;#125;&lt;/span&gt;/ttf/SimHei.ttf&amp;quot;&lt;/span&gt; -q --show-progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -ibak -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/#font.family:/font.family:/g;s/font.family: *SimHei,/font.family:/g;s/font.family:/font.family: SimHei,/g&amp;#x27;&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rm -rf &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_CACHE&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>编译Lab心得</title>
@@ -46,16 +63,34 @@
     <link href="http://keke046.github.io/2022/03/27/cortex/"/>
     <id>http://keke046.github.io/2022/03/27/cortex/</id>
     <published>2022-03-27T13:53:48.000Z</published>
-    <updated>2022-04-06T07:59:27.775Z</updated>
+    <updated>2022-04-06T08:55:30.006Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;cortex处理器型号&quot;&gt;&lt;a href=&quot;#cortex处理器型号&quot; class=&quot;headerlink&quot; title=&quot;cortex处理器型号&quot;&gt;&lt;/a&gt;cortex处理器型号&lt;/h1&gt;&lt;p&gt;ARM三类处理器，分别命名Cortex-A,Cortex-R,Cortex-M&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;系列&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;含义&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;定位&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Cortex-A&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Application&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;带动linux操作系统&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Cortex-R&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Real-time&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;实时系统&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Cortex-M&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Microcontroller&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;低功耗控制器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
     
     
     
