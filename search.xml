@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>cortex处理器型号</title>
+    <url>/2022/03/27/cortex/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>硬件</category>
+      </categories>
+      <tags>
+        <tag>硬件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编译Lab心得</title>
+    <url>/2022/03/27/compiler/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>matplotlib 中文显示</title>
+    <url>/2022/04/06/matplotlib-chinese/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>deep dream 尝试</title>
     <url>/2021/12/26/deep-dream/</url>
     <content><![CDATA[]]></content>
@@ -24,9 +51,16 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/17/hello-world/</url>
+    <title>PCI Passthrough 配置 （显卡直通）</title>
+    <url>/2021/12/17/pci-passthrough/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>archlinux</category>
+      </categories>
+      <tags>
+        <tag>qemu</tag>
+        <tag>archlinux</tag>
+      </tags>
   </entry>
   <entry>
     <title>微观经济学整理复习</title>
@@ -41,15 +75,19 @@
       </tags>
   </entry>
   <entry>
-    <title>PCI Passthrough 配置 （显卡直通）</title>
-    <url>/2021/12/17/pci-passthrough/</url>
+    <title>Hello World</title>
+    <url>/2022/03/17/hello-world/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>计网lab摆烂记</title>
+    <url>/2021/12/01/mofish/compute-network/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>archlinux</category>
+        <category>随笔</category>
       </categories>
       <tags>
-        <tag>qemu</tag>
-        <tag>archlinux</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -65,17 +103,6 @@
       </tags>
   </entry>
   <entry>
-    <title>计网lab摆烂记</title>
-    <url>/2021/12/01/mofish/compute-network/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Scala笔记01 -- 继承、协变与逆变</title>
     <url>/2021/11/12/scala-learn/01-covariance-contravariance/</url>
     <content><![CDATA[]]></content>
@@ -86,32 +113,5 @@
         <tag>scala</tag>
         <tag>compiler</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>编译Lab心得</title>
-    <url>/2022/03/27/compiler/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>cortex处理器型号</title>
-    <url>/2022/03/27/cortex/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>硬件</category>
-      </categories>
-      <tags>
-        <tag>硬件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>matplotlib 中文显示</title>
-    <url>/2022/04/06/matplotlib-chinese/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>

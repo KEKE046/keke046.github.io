@@ -6,7 +6,7 @@
   <link href="http://keke046.github.io/atom.xml" rel="self"/>
   
   <link href="http://keke046.github.io/"/>
-  <updated>2022-04-14T10:51:16.083Z</updated>
+  <updated>2022-05-30T09:20:45.525Z</updated>
   <id>http://keke046.github.io/</id>
   
   <author>
@@ -21,41 +21,16 @@
     <link href="http://keke046.github.io/2022/04/06/matplotlib-chinese/"/>
     <id>http://keke046.github.io/2022/04/06/matplotlib-chinese/</id>
     <published>2022-04-06T08:37:23.000Z</published>
-    <updated>2022-04-14T10:51:16.083Z</updated>
+    <updated>2022-05-30T09:20:45.525Z</updated>
     
     
     <summary type="html">&lt;!-- indicate-the-source --&gt;
 
 &lt;h1 id=&quot;matplotlib-中文显示&quot;&gt;&lt;a href=&quot;#matplotlib-中文显示&quot; class=&quot;headerlink&quot; title=&quot;matplotlib 中文显示&quot;&gt;&lt;/a&gt;matplotlib 中文显示&lt;/h1&gt;&lt;p&gt;matplotlib每次更新似乎中文字体都会炸。写了一个bash脚本来自动修复matplotlib字体，只适用于linux。&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MPL_RC=&lt;span class=&quot;string&quot;&gt;&amp;quot;`python -c &amp;#x27;import matplotlib; print(matplotlib.matplotlib_fname())&amp;#x27;`&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MPL_FONTS=`dirname &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;`/fonts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MPL_CACHE=&lt;span class=&quot;string&quot;&gt;&amp;quot;`python -c &amp;#x27;import matplotlib; print(matplotlib.get_cachedir())&amp;#x27;`&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TTF_URL=&lt;span class=&quot;string&quot;&gt;&amp;quot;https://raw.githubusercontent.com/Yehrin/FontLibrary/master/simhei.ttf&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[ -f &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_FONTS&amp;#125;&lt;/span&gt;/ttf/simhei.ttf ] || wget &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;TTF_URL&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt; -P &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_FONTS&amp;#125;&lt;/span&gt;/ttf&amp;quot;&lt;/span&gt; -q --show-progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -ibak -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/#font.family:/font.family:/g;s/font.family: *SimHei,/font.family:/g;s/font.family:/font.family: SimHei,/g&amp;#x27;&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rm -rf &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_CACHE&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MPL_RC=&lt;span class=&quot;string&quot;&gt;&amp;quot;`python -c &amp;#x27;import matplotlib; print(matplotlib.matplotlib_fname())&amp;#x27;`&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MPL_FONTS=`dirname &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;`/fonts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MPL_CACHE=&lt;span class=&quot;string&quot;&gt;&amp;quot;`python -c &amp;#x27;import matplotlib; print(matplotlib.get_cachedir())&amp;#x27;`&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TTF_URL=&lt;span class=&quot;string&quot;&gt;&amp;quot;https://raw.githubusercontent.com/Yehrin/FontLibrary/master/simhei.ttf&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[ -f &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_FONTS&amp;#125;&lt;/span&gt;/ttf/simhei.ttf ] || wget &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;TTF_URL&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt; -P &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_FONTS&amp;#125;&lt;/span&gt;/ttf&amp;quot;&lt;/span&gt; -q --show-progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cp &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;.bak&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cat &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;.bak | \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/#font.family:/font.family:/g&amp;#x27;&lt;/span&gt;              | \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/font.family: *SimHei,/font.family:/g&amp;#x27;&lt;/span&gt;      | \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/font.family:/font.family: SimHei,/g&amp;#x27;&lt;/span&gt;       | \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/#axes.unicode_minus:/axes.unicode_minus:/g&amp;#x27;&lt;/span&gt;| \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/axes.unicode_minus: True/axes.unicode_minus: False/g&amp;#x27;&lt;/span&gt; |\&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sed -e &lt;span class=&quot;string&quot;&gt;&amp;#x27;s/#mathtext.fontset: dejavusans/mathtext.fontset: cm/g&amp;#x27;&lt;/span&gt; &amp;gt; &lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_RC&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rm -rf &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;MPL_CACHE&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>编译Lab心得</title>
-    <link href="http://keke046.github.io/2022/03/27/compiler/"/>
-    <id>http://keke046.github.io/2022/03/27/compiler/</id>
-    <published>2022-03-27T13:53:48.000Z</published>
-    <updated>2022-03-27T16:54:41.737Z</updated>
-    
-    
-    <summary type="html">&lt;!-- indicate-the-source --&gt;
-
-&lt;h1 id=&quot;编译Lab心得&quot;&gt;&lt;a href=&quot;#编译Lab心得&quot; class=&quot;headerlink&quot; title=&quot;编译Lab心得&quot;&gt;&lt;/a&gt;编译Lab心得&lt;/h1&gt;&lt;p&gt;编译lab，从零开始写一个编译器，要求能够解析C语法的一个子集。&lt;br&gt;写了一周lab，重写了3遍。有的是代码不work，有的是感觉代码不够优美。&lt;/p&gt;
-&lt;p&gt;助教给的libkoopa是C的库，我想要的是现代c++，所以放弃libkoopa，自己写IR的内存表示。也是为了积累工程上的经验。&lt;/p&gt;
-&lt;p&gt;最后第四版终于一气呵成。我的C++代码有2.5k行，对比助教给的kira的rust代码有2.1k行（不算libkoopa）。感觉非常地精简优美，在此将心得分享给大家。&lt;/p&gt;
-&lt;h1 id=&quot;重写的经历&quot;&gt;&lt;a href=&quot;#重写的经历&quot; class=&quot;headerlink&quot; title=&quot;重写的经历&quot;&gt;&lt;/a&gt;重写的经历&lt;/h1&gt;&lt;p&gt;助教给了一个样例编译器，叫&lt;strong&gt;kira&lt;/strong&gt;，（日语：キラキラ，意思是闪闪发光的）。助教想要让他的编译器像星星一样，闪闪发光，指明同学们写编译器的道路。&lt;/p&gt;
-&lt;p&gt;为了证明自己的二次元浓度，我给编译器起名叫：&lt;strong&gt;hoka&lt;/strong&gt;（日语：ほかほか，意思是暖洋洋的），希望写编译器的过程能带给我一点温暖。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="http://keke046.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="随笔" scheme="http://keke046.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -99,6 +74,31 @@
     
     
     <category term="硬件" scheme="http://keke046.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编译Lab心得</title>
+    <link href="http://keke046.github.io/2022/03/27/compiler/"/>
+    <id>http://keke046.github.io/2022/03/27/compiler/</id>
+    <published>2022-03-27T13:53:48.000Z</published>
+    <updated>2022-03-27T16:54:41.737Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;h1 id=&quot;编译Lab心得&quot;&gt;&lt;a href=&quot;#编译Lab心得&quot; class=&quot;headerlink&quot; title=&quot;编译Lab心得&quot;&gt;&lt;/a&gt;编译Lab心得&lt;/h1&gt;&lt;p&gt;编译lab，从零开始写一个编译器，要求能够解析C语法的一个子集。&lt;br&gt;写了一周lab，重写了3遍。有的是代码不work，有的是感觉代码不够优美。&lt;/p&gt;
+&lt;p&gt;助教给的libkoopa是C的库，我想要的是现代c++，所以放弃libkoopa，自己写IR的内存表示。也是为了积累工程上的经验。&lt;/p&gt;
+&lt;p&gt;最后第四版终于一气呵成。我的C++代码有2.5k行，对比助教给的kira的rust代码有2.1k行（不算libkoopa）。感觉非常地精简优美，在此将心得分享给大家。&lt;/p&gt;
+&lt;h1 id=&quot;重写的经历&quot;&gt;&lt;a href=&quot;#重写的经历&quot; class=&quot;headerlink&quot; title=&quot;重写的经历&quot;&gt;&lt;/a&gt;重写的经历&lt;/h1&gt;&lt;p&gt;助教给了一个样例编译器，叫&lt;strong&gt;kira&lt;/strong&gt;，（日语：キラキラ，意思是闪闪发光的）。助教想要让他的编译器像星星一样，闪闪发光，指明同学们写编译器的道路。&lt;/p&gt;
+&lt;p&gt;为了证明自己的二次元浓度，我给编译器起名叫：&lt;strong&gt;hoka&lt;/strong&gt;（日语：ほかほか，意思是暖洋洋的），希望写编译器的过程能带给我一点温暖。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="http://keke046.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://keke046.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -197,6 +197,30 @@
   </entry>
   
   <entry>
+    <title>计网lab摆烂记</title>
+    <link href="http://keke046.github.io/2021/12/01/mofish/compute-network/"/>
+    <id>http://keke046.github.io/2021/12/01/mofish/compute-network/</id>
+    <published>2021-12-01T10:47:49.000Z</published>
+    <updated>2021-12-02T05:22:23.546Z</updated>
+    
+    
+    <summary type="html">&lt;!-- indicate-the-source --&gt;
+
+&lt;p&gt;计算机网络lab，手写链路IP和TCP，重写了至少3遍TCP之后，废弃了约1500行代码后，成功躺平，开始乱搞。&lt;/p&gt;
+&lt;p&gt;感觉TCP就像克苏鲁一样。所有尝试简化TCP让它变得条理清晰，或者用C++的特殊语法来优化代码的尝试都失败了。&lt;/p&gt;
+&lt;p&gt;乱搞真香。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本文和文中图片纯属虚构，纯属调侃，大家笑得开心就行了，不要当真&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="http://keke046.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://keke046.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title>RSA爆破——大数因数分解库</title>
     <link href="http://keke046.github.io/2021/12/01/rsa-crack/"/>
     <id>http://keke046.github.io/2021/12/01/rsa-crack/</id>
@@ -221,30 +245,6 @@
     <category term="crack" scheme="http://keke046.github.io/tags/crack/"/>
     
     <category term="tools" scheme="http://keke046.github.io/tags/tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计网lab摆烂记</title>
-    <link href="http://keke046.github.io/2021/12/01/mofish/compute-network/"/>
-    <id>http://keke046.github.io/2021/12/01/mofish/compute-network/</id>
-    <published>2021-12-01T10:47:49.000Z</published>
-    <updated>2021-12-02T05:22:23.546Z</updated>
-    
-    
-    <summary type="html">&lt;!-- indicate-the-source --&gt;
-
-&lt;p&gt;计算机网络lab，手写链路IP和TCP，重写了至少3遍TCP之后，废弃了约1500行代码后，成功躺平，开始乱搞。&lt;/p&gt;
-&lt;p&gt;感觉TCP就像克苏鲁一样。所有尝试简化TCP让它变得条理清晰，或者用C++的特殊语法来优化代码的尝试都失败了。&lt;/p&gt;
-&lt;p&gt;乱搞真香。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本文和文中图片纯属虚构，纯属调侃，大家笑得开心就行了，不要当真&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="http://keke046.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="随笔" scheme="http://keke046.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
